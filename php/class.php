@@ -12,8 +12,14 @@ class Person {
     public function greet() {
         return "Hello, my name is {$this->name} and I'm {$this->age} years old.";
     }
+
+    public function birthday() {
+        $this->age++;
+        return "Happy Birthday! You are now {$this->age} years old.";
+    }
 }
 
 $person = new Person("Bob", 25);
-echo $person->greet();
+echo $person->greet() . "\n";
+echo $person->birthday() . "\n";
 ?>
