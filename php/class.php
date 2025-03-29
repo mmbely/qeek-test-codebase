@@ -17,9 +17,15 @@ class Person {
         $this->age++;
         return "Happy Birthday! You are now {$this->age} years old.";
     }
+
+    public function capitalizeName() {
+        $this->name = ucfirst($this->name);
+        return "Name capitalized: {$this->name}";
+    }
 }
 
-$person = new Person("Bob", 25);
+$person = new Person("bob", 25);
 echo $person->greet() . "\n";
 echo $person->birthday() . "\n";
+echo $person->capitalizeName() . "\n";
 ?>

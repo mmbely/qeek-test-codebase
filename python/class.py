@@ -11,7 +11,12 @@ class Person:
         self.age += 1
         return f"Happy Birthday! You are now {self.age} years old."
 
+    def capitalize_name(self):
+        self.name = self.name.capitalize()
+        return f"Name capitalized: {self.name}"
+
 if __name__ == "__main__":
-    person = Person("Alice", 30)
+    person = Person("alice", 30)
     print(person.greet())
     print(person.birthday())
+    print(person.capitalize_name())
