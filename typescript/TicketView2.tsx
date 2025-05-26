@@ -25,7 +25,7 @@ import { AIResponseService } from '../../services/aiResponseService';
 import { AIActionButtons } from '../Chat/AIActionButtons';
 import { WorkflowState } from '../Chat/WorkflowIndicator';
 
-// Define message structure for the chat
+// Define message structure for the chat just something to change
 interface TicketMessage {
   id: string;
   ticketId: string;
