@@ -10,7 +10,7 @@ function printUserInfo(user: User): void {
   console.log(`User ${user.name} (${user.email}) is ${user.isActive ? 'active' : 'inactive'}`);
 }
 
-function isActive(user: User): void {
+function isUserActive(user: User): void {
   console.log(`User active status: ${user.isActive}`);
 }
 
