@@ -6,7 +6,7 @@ interface User {
   isActive: boolean;
 }
 
-function printUserInfo(user: User): void {
+function printUserData(user: User): void {
   console.log(`User ${user.name} (${user.email}) is ${user.isActive ? 'active' : 'inactive'}`);
 }
 
@@ -22,4 +22,4 @@ const sampleUser: User = {
 };
 
 
-printUserInfo(sampleUser);
+printUserData(sampleUser);
